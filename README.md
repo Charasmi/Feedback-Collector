@@ -6,7 +6,7 @@ A minimalist single-page app for collecting and displaying user feedback, built 
 
 ## 🌐 Live Demo
 
-[🔗 View on Netlify](https://your-deployment-link.netlify.app)
+[🔗 View on Netlify](https://comfy-toffee-64b01c.netlify.app/)
 
 ---
 
