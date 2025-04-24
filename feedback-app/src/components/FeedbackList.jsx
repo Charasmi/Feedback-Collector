@@ -4,7 +4,7 @@ export default function FeedbackList({ refresh }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("https://feedback_collector.onrender.com/feedbacks")
+    fetch("https://feedback-collector-1-nu87.onrender.com/feedbacks")
       .then((res) => res.json())
       .then(setData);
   }, [refresh]); // Trigger reload when refresh changes
