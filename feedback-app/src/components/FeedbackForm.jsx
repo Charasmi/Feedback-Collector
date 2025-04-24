@@ -25,7 +25,7 @@ export default function FeedbackForm({ onSubmitted }) {
     setErrors({});
     setLoading(true);
 
-    await fetch("http://localhost:5000/submit-feedback", {
+    await fetch("https://feedback_collector.onrender.com/submit-feedback", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
