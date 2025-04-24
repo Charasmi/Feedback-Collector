@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 const corsOptions = {
-  origin: "https://feedback-collector.netlify.app", // your Netlify site
+  origin: "https://comfy-toffee-64b01c.netlify.app/", // your Netlify site
   methods: "GET,POST",
   credentials: true,
 };
