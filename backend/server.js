@@ -7,7 +7,13 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+const corsOptions = {
+  origin: "https://feedback-collector.netlify.app", // your Netlify site
+  methods: "GET,POST",
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 const feedbackFilePath = path.join(__dirname, 'feedbacks.json');
